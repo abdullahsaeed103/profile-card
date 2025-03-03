@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ABCBA2;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height instead of height */
+    color: #ABCBA2;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  img {
+    width: 150px; /* Fixed size for desktop */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 40px; /* Adjusted margin */
+  }
+  
+  .profile-card {
+    background-color: #1A2417;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limit maximum width for larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #1A2417;
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center;
+  }
+  
+  .profile-card h1 {
+    margin-top: 8px;
+    font-size: 24px; /* Fixed font size for desktop */
+  }
+  
+  #role {
+    font-size: 18px; /* Fixed font size for desktop */
+    margin-top: 4px;
+  }
+  
+  p {
+    font-size: 14px; /* Fixed font size for desktop */
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+  
+  .profile-card:hover {
+    background-color: #ABCBA2;
+    color: #1A2417;
+    transition: 1000ms ease-in-out;
+    border: 2px solid #1A2417;
+  }
+  
+  .profile-card:hover #socials a {
+    color: #1A2417;
+  }
+  
+  i {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  
+  #profile-name i {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  
+  #logo {
+    margin-top: 30px; /* Adjusted margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #logo i {
+    font-size: 60px; /* Fixed size for desktop */
+  }
+  
+  #socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  #socials a {
+    text-decoration: none;
+    color: #ABCBA2;
+  }
+  
+  #socials i {
+    font-size: 30px; /* Fixed size for desktop */
+    margin: 10px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    img {
+      width: 120px; /* Slightly smaller image */
+      height: 120px;
+    }
+  
+    .profile-card h1 {
+      font-size: 22px; /* Slightly smaller font size */
+    }
+  
+    #role {
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 13px;
+    }
+  
+    #logo i {
+      font-size: 50px; /* Slightly smaller logo */
+    }
+  
+    #socials i {
+      font-size: 26px; /* Slightly smaller social icons */
+    }
+  }
+  
+  /* Mobile Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    img {
+      width: 100px; /* Smaller image for mobile */
+      height: 100px;
+      margin-top: 20px; /* Adjusted margin */
+    }
+  
+    .profile-card h1 {
+      font-size: 20px; /* Smaller font size for mobile */
+    }
+  
+    #role {
+      font-size: 14px;
+    margin-top: 2px;
+    }
+  
+    p {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  
+    #logo i {
+      font-size: 40px; /* Smaller logo for mobile */
+    }
+  
+    #socials i {
+      font-size: 24px; /* Smaller social icons for mobile */
+      margin: 8px; /* Adjusted margin */
+    }
+  }
